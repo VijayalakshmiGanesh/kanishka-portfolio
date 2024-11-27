@@ -3,19 +3,19 @@ import Link from "next/link";
 
 const links = [
   {
-    name: "facebook",
-    path: "/assets/icons/facebook.svg",
-    link: "/",
-  },
-  {
     name: "instagram",
     path: "/assets/icons/facebook.svg",
-    link: "/",
+    link: "https://www.instagram.com/kanishkapinkfairy/profilecard/?igsh=ZjN6cnBmMmQ2d3pl",
   },
   {
     name: "linkedin",
     path: "/assets/icons/facebook.svg",
-    link: "/",
+    link: "https://www.linkedin.com/in/kanishka-srinivasan-427604255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    name: "youtube",
+    path: "/assets/icons/youtube.svg",
+    link: "https://youtube.com/@kanishkapinkfairy?si=kweJ5DkNe9UUdATl",
   },
 ];
 
