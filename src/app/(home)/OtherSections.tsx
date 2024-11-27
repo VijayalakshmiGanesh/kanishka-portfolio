@@ -1,25 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const pages = [
-  {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Work",
-    link: "/work",
-  },
-  {
-    name: "Contact",
-    link: "/contact",
-  },
-];
-
-export default function OtherSection() {
+export default function OtherSection({
+  categories,
+}: {
+  categories: { name: string; link: string }[];
+}) {
   return (
     <div className="spacing container w-10/12 mx-auto flex flex-wrap gap-28 justify-center items-center">
-      {pages.map(({ name, link }) => (
+      {categories.map(({ name, link }) => (
         <Link href={link} key={name} className="relative">
           <Image
             src="/assets/images/frame.png"

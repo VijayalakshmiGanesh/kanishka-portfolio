@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const links = [
+export const footerLinks = [
   {
     name: "instagram",
     path: "/assets/icons/facebook.svg",
@@ -24,7 +24,7 @@ export default function Footer() {
     <footer className="container mx-auto py-4 flex items-center justify-center gap-2 border-t border-white/35">
       Copyrights Reserved |
       <div className="flex items-center justify-center gap-6 ">
-        {links.map(({ name, link }) => (
+        {footerLinks.map(({ name, link }) => (
           <Link href={link} key={name}>
             <Image
               src={`/assets/icons/${name}.svg`}
