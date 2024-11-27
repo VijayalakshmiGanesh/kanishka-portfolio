@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <>
-      <PageBanner />
+      <PageBanner imgLink="https://drive.usercontent.google.com/download?id=1iwRRPGTdE1mNvehanJ5suioxTR8_YQr7&export=view&authuser=0" />
       <div className="w-80 shadow-[0_4px_8px_-0px_#FFFFFF1A] mx-auto flex flex-col gap-6 p-8 my-8">
         <div className="text-4xl font-semibold">Let&apos;s talk</div>
         <Link

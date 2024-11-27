@@ -23,7 +23,7 @@ const pages = [
 export default function Page() {
   return (
     <>
-      <PageBanner />
+      <PageBanner imgLink="https://drive.google.com/uc?export=view&id=1iru8lzuSRF_QZPmZ61FkeNgVayvpBC0a" />
       <OtherSection categories={pages} />
     </>
   );
