@@ -34,7 +34,7 @@ export default function Header() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           scrolled
-            ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-lg"
+            ? "bg-white/80 dark:bg-[#121212]/80 backdrop-blur-lg shadow-lg"
             : "bg-transparent"
         }`}
       >
@@ -158,7 +158,7 @@ export default function Header() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 20 }}
-            className="fixed inset-0 z-30 md:hidden bg-white dark:bg-gray-900"
+            className="fixed inset-0 z-30 md:hidden bg-white dark:bg-[#121212]"
           >
             <div className="flex flex-col items-center justify-center h-full space-y-8">
               {navItems.map((item, index) => (

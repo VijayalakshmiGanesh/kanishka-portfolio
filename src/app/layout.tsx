@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen flex flex-col`}
+        className={`${inter.className} transition-colors duration-300 bg-white dark:bg-[#121212] text-gray-900 dark:text-white min-h-screen flex flex-col`}
       >
         <ThemeProvider>
           <Header />

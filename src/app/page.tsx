@@ -45,13 +45,13 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <motion.span
+              {/* <motion.span
                 className="absolute -top-8 -left-8 text-5xl"
                 animate={{ rotate: [0, 360] }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               >
                 ✨
-              </motion.span>
+              </motion.span> */}
               <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
@@ -112,12 +112,12 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative h-[400px] lg:h-[600px]"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent overflow-hidden">
                 <Image
                   alt="show reel"
                   fill
                   src="https://drive.google.com/uc?export=view&id=1ZqYgmnZRoqEWpKjH_t1emdSnBhucLdYo"
-                  className="w-full h-full rounded-2xl"
+                  className="w-full h-full"
                 />
               </div>
             </motion.div>
@@ -140,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* Featured Works Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
+      <section className="py-20 bg-gray-50 dark:bg-[#121212]/50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -170,7 +170,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className="group relative aspect-auto h-[400px] w-full md:width-[400px] bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg"
+                className="group relative aspect-auto h-[400px] w-full md:width-[400px] bg-white dark:bg-[#121212] overflow-hidden shadow-lg"
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Image
