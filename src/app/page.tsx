@@ -37,7 +37,7 @@ export default function Home() {
           />
         </motion.div>
 
-        <div className="container spacing mx-auto px-4 z-10">
+        <div className="container spacing mx-auto px-4 z-10 pt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -113,16 +113,11 @@ export default function Home() {
               className="relative h-[400px] lg:h-[600px]"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-2xl overflow-hidden">
-                <motion.div
-                  className="w-full h-full bg-gray-200 dark:bg-gray-800 rounded-2xl"
-                  animate={{
-                    boxShadow: [
-                      "0 0 20px rgba(255,134,188,0.3)",
-                      "0 0 40px rgba(255,134,188,0.3)",
-                      "0 0 20px rgba(255,134,188,0.3)",
-                    ],
-                  }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                <Image
+                  alt="show reel"
+                  fill
+                  src="https://drive.google.com/uc?export=view&id=1ZqYgmnZRoqEWpKjH_t1emdSnBhucLdYo"
+                  className="w-full h-full rounded-2xl"
                 />
               </div>
             </motion.div>

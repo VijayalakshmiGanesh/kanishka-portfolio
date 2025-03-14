@@ -37,12 +37,14 @@ const categories = {
   },
 };
 
+type CategoryKey = keyof typeof categories;
+
 export default function Works() {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState<CategoryKey>("all");
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
 
   const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
+    setSelectedCategory(category as CategoryKey);
     setSelectedSubcategory("");
   };
 
