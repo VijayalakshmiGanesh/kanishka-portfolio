@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-pink: #ffafc8;
+  --primary-pink: #ff86bc;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +29,5 @@ body {
 }
 
 .spacing {
-  @apply my-16;
+  @apply my-20;
 }

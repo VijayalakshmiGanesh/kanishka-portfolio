@@ -1,29 +1,31 @@
-import type { Metadata } from "next";
-import { Montserrat_Alternates } from "next/font/google";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header/page";
-import Footer from "@/components/Footer/footer";
 
-// If loading a variable font, you don't need to specify the font weight
-const montserrat = Montserrat_Alternates({ subsets: ["latin"], weight: "400" });
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Kanishka Portfolio",
-  description:
-    "PINK FAIRY - KANISHKA, Animator portfolio, Student of Univertsity of Arts, London (UAL)",
+export const metadata = {
+  title: "Kanishka - Animation Portfolio",
+  description: "A showcase of creative animation work by Kanishka",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.className}`}>
-        <Header />
-        {children}
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.className} transition-colors duration-300 bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen flex flex-col`}
+      >
+        <ThemeProvider>
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

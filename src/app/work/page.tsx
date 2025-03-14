@@ -7,16 +7,21 @@ const pages = [
     link: "/work/animation",
   },
   {
-    name: "Digital Arts",
-    link: "/work/digital-art",
-  },
-  {
-    name: "Paintings",
+    name: "Painting & drawing",
     link: "/work/paintings",
   },
   {
-    name: "Drawings & Illustrations",
+    name: "Courture Design",
+    link: "/work/digital-art",
+  },
+
+  {
+    name: "Potrait & Character",
     link: "/work/drawings",
+  },
+  {
+    name: "Crafts",
+    link: "/work/crafts",
   },
 ];
 
