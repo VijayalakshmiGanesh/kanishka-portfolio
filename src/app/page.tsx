@@ -170,7 +170,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10 }}
-                className="group relative aspect-auto h-[500px] w-full md:width-[500px] bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg"
+                className="group relative aspect-auto h-[400px] w-full md:width-[400px] bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg"
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <Image

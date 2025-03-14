@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Kanishka - Animation Portfolio",
-  description: "A showcase of creative animation work by Kanishka",
+  title: "PINK FAIRY Portfolio",
+  description: "A showcase of creative animation work by PINK FAIRY - Kanishka",
 };
 
 export default function RootLayout({

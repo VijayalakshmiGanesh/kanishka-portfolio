@@ -58,12 +58,12 @@ export default function Header() {
                   />
                   <span className="relative z-10">K</span>
                 </motion.div>
-                <div className="flex flex-col">
+                <div className="flex flex-col items-center">
                   <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                    Kanishka
+                    PINK FAIRY
                   </span>
                   <span className="text-xs text-gray-500 dark:text-gray-400">
-                    Animator & Designer
+                    Animator & Visual artist
                   </span>
                 </div>
               </Link>

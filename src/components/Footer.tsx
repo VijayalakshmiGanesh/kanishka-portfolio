@@ -12,7 +12,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative pt-32 pb-16 overflow-hidden">
+    <footer className="relative pt-32 pb-8 overflow-hidden">
       {/* Background Animation */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -42,7 +42,7 @@ export default function Footer() {
                 K
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                Kanishka
+                PINK FAIRY
               </span>
             </motion.div>
             <p className="text-gray-600 dark:text-gray-400">
