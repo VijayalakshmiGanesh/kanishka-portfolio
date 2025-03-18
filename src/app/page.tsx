@@ -113,11 +113,14 @@ export default function Home() {
               className="relative h-[400px] lg:h-[600px]"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent overflow-hidden">
-                <Image
-                  alt="show reel"
-                  fill
-                  src="https://drive.google.com/uc?export=view&id=1ZqYgmnZRoqEWpKjH_t1emdSnBhucLdYo"
+                <video
+                  src="/assets/videos/herobanner.mp4"
                   className="w-full h-full"
+                  controls={false}
+                  controlsList="nodownload"
+                  autoPlay={true}
+                  loop={true}
+                  muted
                 />
               </div>
             </motion.div>

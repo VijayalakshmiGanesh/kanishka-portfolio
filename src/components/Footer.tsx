@@ -2,13 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-
-const socialLinks = [
-  { name: "Instagram", url: "#", icon: "📸" },
-  { name: "Twitter", url: "#", icon: "🐦" },
-  { name: "LinkedIn", url: "#", icon: "💼" },
-  { name: "Behance", url: "#", icon: "🎨" },
-];
+import { footerLinks } from "./Footer/footer";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -38,9 +33,24 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex items-center space-x-2"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-bold">
-                K
-              </div>
+              <motion.div
+                className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-xl overflow-hidden relative group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <motion.div
+                  className="absolute p-4 inset-0 bg-gradient-to-r from-primary via-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  animate={{ x: ["0%", "100%"], opacity: [0, 1, 0] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                />
+                <Image
+                  src="/assets/images/logo-white.png"
+                  height={32}
+                  width={32}
+                  className="relative z-10 "
+                  alt="pinkfairy logo"
+                />
+              </motion.div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
                 PINKFAIRY
               </span>
@@ -120,10 +130,10 @@ export default function Footer() {
               Connect
             </motion.h3>
             <div className="flex flex-wrap gap-4">
-              {socialLinks.map((social, index) => (
+              {footerLinks.map((social, index) => (
                 <motion.a
                   key={social.name}
-                  href={social.url}
+                  href={social.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, scale: 0 }}
@@ -134,7 +144,12 @@ export default function Footer() {
                   whileTap={{ scale: 0.9 }}
                   className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors"
                 >
-                  {social.icon}
+                  <Image
+                    src={`/assets/icons/${social.name}.svg`}
+                    width={32}
+                    height={32}
+                    alt={social.name}
+                  />
                 </motion.a>
               ))}
             </div>
