@@ -60,7 +60,7 @@ export default function Header() {
                 </motion.div>
                 <div className="flex flex-col items-center">
                   <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                    PINK FAIRY
+                    PINKFAIRY
                   </span>
                   <span className="text-xs text-gray-500 dark:text-gray-400">
                     Animator & Visual artist

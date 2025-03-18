@@ -42,7 +42,7 @@ export default function Footer() {
                 K
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                PINK FAIRY
+                PINKFAIRY
               </span>
             </motion.div>
             <p className="text-gray-600 dark:text-gray-400">
@@ -91,9 +91,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 "2D Animation",
-                "3D Animation",
                 "Character Design",
-                "Motion Graphics",
+                "Stop Motion",
+                "Painting",
+                "Craftwork",
               ].map((item, index) => (
                 <motion.li
                   key={item}

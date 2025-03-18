@@ -70,7 +70,7 @@ export default function Home() {
                   Caffeine
                 </motion.span>
               </h1>
-              <motion.p
+              {/* <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
@@ -78,7 +78,7 @@ export default function Home() {
               >
                 Creating captivating animated experiences that leave lasting
                 impressions
-              </motion.p>
+              </motion.p> */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -194,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -202,9 +202,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Animation Expertise
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Expertise</h2>
             <motion.div
               className="w-20 h-1 bg-primary mx-auto"
               whileInView={{ scaleX: [0, 1] }}
@@ -246,7 +244,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
