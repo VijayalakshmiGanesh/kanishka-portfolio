@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   const skills = [
@@ -39,13 +41,13 @@ export default function About() {
               >
                 Download Resume
               </motion.button>
-              <motion.button
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-primary hover:bg-primary/10 text-primary px-6 py-3 rounded-full font-medium transition-colors"
               >
-                Contact Me
-              </motion.button>
+                <Link href="/contact">Contact Me</Link>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -57,7 +59,13 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
             {/* Replace with your profile image */}
-            <div className="w-full h-full bg-gray-200 dark:bg-gray-800" />
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1xgt5xfqLPeWuN1jUOT5JGQGcMCqFfshj"
+              width={800}
+              height={400}
+              alt="pinkfairy"
+              className="object-center"
+            />
           </motion.div>
         </div>
 
