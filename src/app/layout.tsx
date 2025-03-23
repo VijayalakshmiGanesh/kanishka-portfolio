@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "PINK FAIRY Portfolio",
-  description: "A showcase of creative animation work by PINK FAIRY - Kanishka",
+  title: "PINKFAIRY Portfolio",
+  description: "A showcase of creative works by PINKFAIRY - Kanishka",
 };
 
 export default function RootLayout({

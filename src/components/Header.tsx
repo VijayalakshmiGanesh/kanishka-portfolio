@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useTheme } from "./ThemeProvider";
+import Image from "next/image";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -52,15 +53,21 @@ export default function Header() {
                   whileTap={{ scale: 0.95 }}
                 >
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-primary via-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    className="absolute p-4 inset-0 bg-gradient-to-r from-primary via-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     animate={{ x: ["0%", "100%"], opacity: [0, 1, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
                   />
-                  <span className="relative z-10">K</span>
+                  <Image
+                    src="/assets/images/logo-white.png"
+                    height={32}
+                    width={32}
+                    className="relative z-10 "
+                    alt="pinkfairy logo"
+                  />
                 </motion.div>
                 <div className="flex flex-col items-center">
                   <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                    PINK FAIRY
+                    PINKFAIRY
                   </span>
                   <span className="text-xs text-gray-500 dark:text-gray-400">
                     Animator & Visual artist

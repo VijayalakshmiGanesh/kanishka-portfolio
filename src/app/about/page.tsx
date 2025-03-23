@@ -1,14 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   const skills = [
     { name: "2D Animation", level: 90 },
-    { name: "3D Animation", level: 85 },
-    { name: "Character Design", level: 88 },
+    { name: "Visual Art", level: 85 },
+    { name: "Stop Motion", level: 88 },
     { name: "Motion Graphics", level: 92 },
-    { name: "Storyboarding", level: 87 },
+    { name: "3D Drawing", level: 87 },
   ];
 
   return (
@@ -27,10 +29,9 @@ export default function About() {
               </span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              I&apos;m a passionate animator with over 5 years of experience in
-              creating compelling visual stories. My journey in animation began
-              with a fascination for bringing characters to life and has evolved
-              into a professional career crafting memorable experiences.
+              I&apos;m an artist with experience in both traditional and digital
+              techniques, currently focusing on the creative industries of
+              animation and visual arts.
             </p>
             <div className="flex gap-4">
               <motion.button
@@ -40,13 +41,13 @@ export default function About() {
               >
                 Download Resume
               </motion.button>
-              <motion.button
+              <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="border-2 border-primary hover:bg-primary/10 text-primary px-6 py-3 rounded-full font-medium transition-colors"
               >
-                Contact Me
-              </motion.button>
+                <Link href="/contact">Contact Me</Link>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -58,7 +59,13 @@ export default function About() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
             {/* Replace with your profile image */}
-            <div className="w-full h-full bg-gray-200 dark:bg-gray-800" />
+            <Image
+              src="https://drive.google.com/uc?export=view&id=1xgt5xfqLPeWuN1jUOT5JGQGcMCqFfshj"
+              width={800}
+              height={400}
+              alt="pinkfairy"
+              className="object-center"
+            />
           </motion.div>
         </div>
 
@@ -67,31 +74,34 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-20"
+          className="mb-20 md:w-3/4 2xl:w-1/2 mx-auto"
         >
           <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-stretch">
             {skills.map((skill, index) => (
               <motion.div
                 key={skill.name}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
+                className="group text-center flex gap-8 items-center"
               >
-                <div className="flex justify-between mb-2">
-                  <span className="font-medium">{skill.name}</span>
-                  <span className="text-primary">{skill.level}%</span>
+                <div className="mx-0 h-20 mb-4 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <motion.span
+                    className="text-primary text-2xl"
+                    animate={{ rotate: [0, 360] }}
+                    transition={{
+                      duration: 20,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  >
+                    ✦
+                  </motion.span>
                 </div>
-                <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
-                    className="h-full bg-primary rounded-full"
-                  />
-                </div>
+                <h3 className="font-bold mb-2">{skill.name}</h3>
               </motion.div>
             ))}
           </div>
@@ -104,7 +114,7 @@ export default function About() {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
+          {/* <h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
           <div className="space-y-8">
             {[1, 2, 3].map((item, index) => (
               <motion.div
@@ -132,7 +142,7 @@ export default function About() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </div>

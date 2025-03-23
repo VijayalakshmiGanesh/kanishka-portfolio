@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Gallery from "@/components/Gallery";
 import { workItems } from "./data";
@@ -42,10 +42,13 @@ type CategoryKey = keyof typeof categories;
 export default function Works() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryKey>("all");
   const [selectedSubcategory, setSelectedSubcategory] = useState("");
+  const [visibleItems, setVisibleItems] = useState(10);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category as CategoryKey);
     setSelectedSubcategory("");
+    setVisibleItems(10); // Reset visible items when changing category
   };
 
   const filteredItems = workItems.filter((item) => {
@@ -58,6 +61,31 @@ export default function Works() {
     }
     return item.category === selectedCategory;
   });
+
+  const displayedItems = filteredItems.slice(0, visibleItems);
+  const hasMore = filteredItems.length > visibleItems;
+
+  // Implement infinite scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isLoading || !hasMore) return;
+
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const threshold = document.documentElement.scrollHeight - 800; // Load more 800px before bottom
+
+      if (scrollPosition >= threshold) {
+        setIsLoading(true);
+        // Simulate loading delay
+        setTimeout(() => {
+          setVisibleItems((prev) => Math.min(prev + 10, filteredItems.length));
+          setIsLoading(false);
+        }, 500);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [filteredItems.length, hasMore, isLoading]);
 
   return (
     <div className="min-h-screen pt-24">
@@ -153,7 +181,43 @@ export default function Works() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
-            <Gallery items={filteredItems} />
+            <Gallery items={displayedItems} />
+
+            {/* Loading indicator */}
+            {isLoading && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex justify-center py-8"
+              >
+                <div className="w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin" />
+              </motion.div>
+            )}
+            {/* Load more button (alternative to infinite scroll) */}
+            {hasMore && !isLoading && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex justify-center mt-8"
+              >
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-primary-dark transition-colors"
+                  onClick={() => {
+                    setIsLoading(true);
+                    setTimeout(() => {
+                      setVisibleItems((prev) =>
+                        Math.min(prev + 10, filteredItems.length)
+                      );
+                      setIsLoading(false);
+                    }, 500);
+                  }}
+                >
+                  Load More
+                </motion.button>
+              </motion.div>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>

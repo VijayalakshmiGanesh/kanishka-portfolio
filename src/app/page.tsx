@@ -70,7 +70,7 @@ export default function Home() {
                   Caffeine
                 </motion.span>
               </h1>
-              <motion.p
+              {/* <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
@@ -78,7 +78,7 @@ export default function Home() {
               >
                 Creating captivating animated experiences that leave lasting
                 impressions
-              </motion.p>
+              </motion.p> */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -113,11 +113,14 @@ export default function Home() {
               className="relative h-[400px] lg:h-[600px]"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent overflow-hidden">
-                <Image
-                  alt="show reel"
-                  fill
-                  src="https://drive.google.com/uc?export=view&id=1ZqYgmnZRoqEWpKjH_t1emdSnBhucLdYo"
+                <video
+                  src="/assets/videos/herobanner.mp4"
                   className="w-full h-full"
+                  controls={false}
+                  controlsList="nodownload"
+                  autoPlay={true}
+                  loop={true}
+                  muted
                 />
               </div>
             </motion.div>
@@ -161,8 +164,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               "1xgt5xfqLPeWuN1jUOT5JGQGcMCqFfshj",
-              "1y3C2HGtx7QEEdiUhQ2v35LRbQkShw_eN",
+              "16S-uaijsVPMci04CPiyAeEUHnJ82aS4P",
               "1xywb5p1CVsBLKIbIU7jLI7s9Ry3JAOBk",
+              "16X2sRNRlPDLBOUcb5DP4rS2aI1WnG_W5",
+              "16XVSS-vTd_JdD6zXvyDamQ-5weM8tL_K",
+              "16XfIupmiynjF8kMgA67e-uZP3RhtwMag",
+              "16dGELqv_A8cx9o3tn4vBgIzWY8lgH8bu",
+              "16OU-9FKBg5Fc6dalONUF_otTn_B_e5jB",
+              "1y3C2HGtx7QEEdiUhQ2v35LRbQkShw_eN",
             ].map((item) => (
               <motion.div
                 key={item}
@@ -194,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -202,9 +211,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Animation Expertise
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">Expertise</h2>
             <motion.div
               className="w-20 h-1 bg-primary mx-auto"
               whileInView={{ scaleX: [0, 1] }}
@@ -246,7 +253,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
