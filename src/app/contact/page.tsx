@@ -8,6 +8,7 @@ import { z, ZodError } from "zod";
 
 import { sendEmail } from "../actions/sendEmail";
 import { footerLinks } from "@/components/Footer/footer";
+import { formatZodErr } from "@/utils/common";
 
 const schema = z.object({
   name: z
@@ -30,17 +31,6 @@ const schema = z.object({
 });
 
 const defaultVal = { state: "", message: "" };
-
-export const formatZodErr = (err: ZodError) => {
-  return err.errors.reduce(
-    (acc: Record<string, string>, curr: ZodError["errors"][number]) => {
-      const field = curr.path.join(".");
-      acc[field] = curr.message;
-      return acc;
-    },
-    {} as Record<string, string>
-  );
-};
 
 export default function Contact() {
   const [status, setStatus] = useState(defaultVal);
