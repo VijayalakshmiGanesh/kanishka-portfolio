@@ -113,7 +113,7 @@ export default function Home() {
               className="relative h-[400px] lg:h-[600px]"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent overflow-hidden">
-                <video
+                {/* <video
                   src="/assets/videos/herobanner.mp4"
                   className="w-full h-full"
                   controls={false}
@@ -121,7 +121,15 @@ export default function Home() {
                   autoPlay={true}
                   loop={true}
                   muted
-                />
+                /> */}
+                <iframe
+                  title="show reel"
+                  src="https://drive.google.com/file/d/1izXsYQm9E-cqQaBUWqFmnhj9ObVkeJUx/preview"
+                  width="640"
+                  height="700"
+                  allow="autoplay"
+                  className="w-full h-[75dvh]"
+                ></iframe>
               </div>
             </motion.div>
           </div>
