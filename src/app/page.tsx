@@ -38,7 +38,7 @@ export default function Home() {
         </motion.div>
 
         <div className="container spacing mx-auto px-4 z-10 pt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -110,7 +110,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative h-[400px] lg:h-[600px]"
+              className="relative h-[400px] lg:h-[600px] col-span-2"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent overflow-hidden">
                 {/* <video
@@ -124,11 +124,11 @@ export default function Home() {
                 /> */}
                 <iframe
                   title="show reel"
-                  src="https://drive.google.com/file/d/1izXsYQm9E-cqQaBUWqFmnhj9ObVkeJUx/preview"
-                  width="640"
-                  height="700"
+                  src="https://drive.google.com/file/d/14erR14cPAZRcIQZfNIASeGKsZmAZ17NZ/preview"
+                  width="700"
+                  height="480"
                   allow="autoplay"
-                  className="w-full h-[75dvh]"
+                  className="w-full h-full lg:h-[65vh]"
                 ></iframe>
               </div>
             </motion.div>
