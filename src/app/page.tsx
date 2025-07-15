@@ -124,8 +124,8 @@ export default function Home() {
                 /> */}
                 <iframe
                   title="show reel"
-                  src="https://drive.google.com/file/d/14erR14cPAZRcIQZfNIASeGKsZmAZ17NZ/preview"
-                  width="700"
+                  src="https://drive.google.com/file/d/1seyQt9SpsAmrB5J-HAwwrxq0EG2qaQ-e/preview"
+                  width="640"
                   height="480"
                   allow="autoplay"
                   className="w-full h-full lg:h-[65vh]"

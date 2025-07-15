@@ -10,30 +10,13 @@ const categories = {
     name: "All Works",
     subcategories: [],
   },
-  animation: {
-    name: "Animation",
-    subcategories: ["Digital 2D", "Traditional 2D", "Stop Motion", "Projects"],
-  },
-  "painting-drawing": {
-    name: "Painting & Drawing",
-    subcategories: [
-      "Brush Strokes",
-      "Digital Paintings",
-      "Pencil Strokes",
-      "3D Drawings",
-    ],
-  },
-  "couture-design": {
-    name: "Couture Design",
+  illustration: {
+    name: "Illustration",
     subcategories: [],
   },
-  "portrait-character": {
-    name: "Portrait & Character",
-    subcategories: ["Imaginary Faces", "Portraiture", "Character Drawings"],
-  },
-  craft: {
-    name: "Craft",
-    subcategories: ["Resin Art", "Clay Art", "Cards"],
+  animation: {
+    name: "Animation",
+    subcategories: [],
   },
 };
 
