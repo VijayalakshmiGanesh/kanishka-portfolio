@@ -33,10 +33,13 @@ const schema = z.object({
 const defaultVal = { state: "", message: "" };
 
 export default function Contact() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [status, setStatus] = useState(defaultVal);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
   const formRef = useRef<HTMLFormElement>(null);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleSumbit = async (formData: FormData) => {
     try {
       console.log(formData.get("name"));
