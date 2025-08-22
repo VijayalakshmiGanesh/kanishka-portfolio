@@ -10,7 +10,7 @@ type MediaItem = {
   src: string;
   thumbnail: string;
   title: string;
-  description: string;
+  description: string | React.ReactElement;
   category: string;
   subcategory: string;
 };
