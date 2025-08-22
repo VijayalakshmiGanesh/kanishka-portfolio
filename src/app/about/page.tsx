@@ -14,26 +14,64 @@ export default function About() {
   ];
 
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-32">
       <div className="container mx-auto px-4">
         {/* Hero Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-20 text-lg text-gray-600 dark:text-gray-300">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
-                About Me
-              </span>
-            </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              I&apos;m an artist with experience in both traditional and digital
-              techniques, currently focusing on the creative industries of
-              animation and visual arts.
-            </p>
-            <div className="flex gap-4">
+            <div>
+              {" "}
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
+                  About Me
+                </span>
+              </h1>
+              <p className=" mb-6">
+                Hi, I&apos;m Kanishka, a.k.a. Pinkfairy. <br />
+                To keep a long story short, I was forced into pursuing a B.Tech
+                in Computer Science Engineering, but I survived. Eventually, I
+                earned a Master&apos;s degree in Arts (M.A. in Animation) after
+                a 9-year journey that began in 10th grade.
+              </p>
+              <p>
+                During that time, I also ran an art business on Etsy and
+                Instagram, where I mastered customer service and provided
+                clients with satisfying illustrations, animations, paintings,
+                and resin art pieces.
+              </p>
+              <p>
+                Now that I’m here, let me just say, I have a knack for learning
+                things quickly, haha. I didn’t enjoy my bachelor’s degree, but I
+                mastered it anyway. I was new to Animation, yet I ended up
+                working on multiple short films.
+              </p>
+              <p>
+                So, to any recruiters reading this and wondering why I’d be a
+                great fit for your role, please feel free to adopt me into your
+                team! I’m highly adaptable and always ready to learn.
+              </p>
+            </div>
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold my-6">
+                <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
+                  Biography
+                </span>
+              </h2>
+              <p>
+                Kanishka Srinivasan, known by her pseudonym
+                &ldquo;PinkFairy,&ldquo; is an artist who blends her expertise
+                in handmade crafts and painting with a growing focus on
+                animation. She explores selfdevelopment themes through a mix of
+                traditional and modern techniques, often using pastel colours to
+                create her distinctive style. Her work represents a thoughtful
+                approach to merging different artistic methods and mediums.
+              </p>
+            </div>
+            <div className="flex gap-4 my-6">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -55,14 +93,14 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6 }}
-            className="relative h-[400px] rounded-2xl overflow-hidden"
+            className="relative h-[600px] rounded-2xl overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent" />
             {/* Replace with your profile image */}
             <Image
               src="https://drive.google.com/uc?export=view&id=1xgt5xfqLPeWuN1jUOT5JGQGcMCqFfshj"
               width={800}
-              height={400}
+              height={600}
               alt="pinkfairy"
               className="object-center"
             />

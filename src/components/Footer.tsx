@@ -162,7 +162,17 @@ export default function Footer() {
           viewport={{ once: true }}
           className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-600 dark:text-gray-400"
         >
-          <p>© {new Date().getFullYear()} Kanishka. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Kanishka. All rights reserved. Crafted
+            in pixels and passion by{" "}
+            <Link
+              href="https://www.linkedin.com/in/vijayalakshmi-g-182a061a9/"
+              target="_blank"
+              className="text-primary hover:text-primary-dark"
+            >
+              VG
+            </Link>
+          </p>{" "}
         </motion.div>
       </div>
     </footer>

@@ -50,6 +50,7 @@ export default function Contact() {
       const result = await sendEmail(formData);
       if (result.success) {
         setStatus({ message: "Submitted successfully!", state: "success" });
+        setErrors({ name: "", email: "", message: "" });
         formRef.current?.reset(); // Reset the form
       } else {
         setStatus({ message: "Failed to submit.", state: "fail" });
@@ -75,7 +76,7 @@ export default function Contact() {
           className="absolute inset-0"
         >
           <Image
-            src="https://drive.usercontent.google.com/download?id=1iwRRPGTdE1mNvehanJ5suioxTR8_YQr7&export=view&authuser=0"
+            src="https://drive.usercontent.google.com/download?id=1_zLeC6LtIEpXbdJ8ksnXx0-iCaOeA30a&export=view&authuser=0"
             alt="Contact Banner"
             fill
             className="object-cover"
@@ -100,7 +101,8 @@ export default function Contact() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 gap-12">
+              {/* // md:grid-cols-2 */}
               {/* Contact Information */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -108,8 +110,8 @@ export default function Contact() {
                 transition={{ delay: 0.2 }}
                 className="space-y-8"
               >
-                <div>
-                  <h2 className="text-3xl font-bold mb-6">
+                <div className="text-center">
+                  <h2 className="text-3xl font-bold mb-6 ">
                     <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
                       Let&apos;s Connect
                     </span>
@@ -122,7 +124,7 @@ export default function Contact() {
 
                 <motion.div
                   whileHover={{ scale: 1.02 }}
-                  className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                  className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
                 >
                   <h3 className="text-lg font-semibold mb-2">Email Me At</h3>
                   <Link
@@ -133,9 +135,9 @@ export default function Contact() {
                   </Link>
                 </motion.div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 text-center">
                   <h3 className="text-lg font-semibold">Follow Me</h3>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 justify-center">
                     {footerLinks.map((social, index) => (
                       <motion.a
                         key={social.name}
@@ -161,9 +163,8 @@ export default function Contact() {
                   </div>
                 </div>
               </motion.div>
-
               {/* Contact Form */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4 }}
@@ -253,7 +254,7 @@ export default function Contact() {
                     {status.message}
                   </div>
                 )}
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
         </div>

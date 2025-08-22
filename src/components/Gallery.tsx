@@ -52,10 +52,12 @@ export default function Gallery({ items }: { items: MediaItem[] }) {
                 className="w-full h-full"
               />
             )}
-            {/* <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
               <h3 className="text-lg font-bold">{item.title}</h3>
-              <p className="text-sm">{item.description}</p>
-            </div> */}
+              {item.description && (
+                <p className="text-sm">{item.description}</p>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>

@@ -5,8 +5,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=18GdlzWFtu1ojWymZT0bjLHEMPbJq2eis",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=18GdlzWFtu1ojWymZT0bjLHEMPbJq2eis",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Lost",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -16,8 +16,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1adCUVcfXMPYj6IDC7vQBjvaA134-JFaE",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1adCUVcfXMPYj6IDC7vQBjvaA134-JFaE",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Do You",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -27,8 +27,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1fRYc5Wp8U9WkmfE570duerJiTbyQ_AUg",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1fRYc5Wp8U9WkmfE570duerJiTbyQ_AUg",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Galactic Glitter",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -38,8 +38,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1v1uifSQoHMLxAb9hifkc800XibB5HTa3",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1v1uifSQoHMLxAb9hifkc800XibB5HTa3",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Bottles - The Cosmetic guys",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -49,8 +49,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1COuG2QBI8iXEWPPmQfqGEuZpiR8dOeHc",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1COuG2QBI8iXEWPPmQfqGEuZpiR8dOeHc",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Why Not",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -60,8 +60,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=11T0xaW6sSGLNSdvFG8exPp-JIJZ0Xa6j",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=11T0xaW6sSGLNSdvFG8exPp-JIJZ0Xa6j",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Catman",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -71,8 +71,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=10e58n3_DHM2Rk6mB-RzSXLzitFzNwMak",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=10e58n3_DHM2Rk6mB-RzSXLzitFzNwMak",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Hidden Admiration",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -82,8 +82,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1YGrcKeDG4OTrgoOYvbPwwCK1mN0hXJEX",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1YGrcKeDG4OTrgoOYvbPwwCK1mN0hXJEX",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "I believe in magic",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -93,8 +93,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1_zLeC6LtIEpXbdJ8ksnXx0-iCaOeA30a",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1_zLeC6LtIEpXbdJ8ksnXx0-iCaOeA30a",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Bluession",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -104,8 +104,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1um9zYKrUkNJOigk36-1TFdFfWK3eu-3q",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1um9zYKrUkNJOigk36-1TFdFfWK3eu-3q",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Await",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -115,8 +115,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1Z3fvlXpHCZgO1g0d95pP8TcENfn7RIb2",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1Z3fvlXpHCZgO1g0d95pP8TcENfn7RIb2",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Power",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -126,8 +126,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1RZiZyRjwr__xqQFztH7povwhp5ByiSqr",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1RZiZyRjwr__xqQFztH7povwhp5ByiSqr",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Delusion",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -137,8 +137,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1LevJZ1B24O2op-c4G_OFsmtVGk_YJBQC",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1LevJZ1B24O2op-c4G_OFsmtVGk_YJBQC",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "One Side",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -148,8 +148,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1R9C6OZywUVtDHMJJTYhPrBB2LbuRm7I1",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1R9C6OZywUVtDHMJJTYhPrBB2LbuRm7I1",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Design #33",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -159,8 +159,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1DKm9WU4Bc2YFlTMR-N9x5Whcw5TNByt8",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1DKm9WU4Bc2YFlTMR-N9x5Whcw5TNByt8",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Wine Forever",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -170,8 +170,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1JusPHp5yMd2Ink8GTyAx351eccwIVLdt",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1JusPHp5yMd2Ink8GTyAx351eccwIVLdt",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Artist life",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -181,8 +181,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1e_6hdWEBHvNYA9gyrFPkKL55uYQRoLxC",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1e_6hdWEBHvNYA9gyrFPkKL55uYQRoLxC",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Intense",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -192,8 +192,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1lcqM_8r9HnxXr4PAyfekXuwzbQoCaZHU",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1lcqM_8r9HnxXr4PAyfekXuwzbQoCaZHU",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Blue Sea illustration",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -203,8 +203,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1wOAhGw_pV6BfdEsD6b0dEuGUMDyAz-dZ",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1wOAhGw_pV6BfdEsD6b0dEuGUMDyAz-dZ",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Look Back",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -214,8 +214,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1JrwjIZmCmRzHWtYfADzJ0osfUgqj0YB1",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1JrwjIZmCmRzHWtYfADzJ0osfUgqj0YB1",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Sure?",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -225,8 +225,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1kWDC0Fma8KEx3Ly45B3OIGdv2tFKae8d",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1kWDC0Fma8KEx3Ly45B3OIGdv2tFKae8d",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "It Happens",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -236,8 +236,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1ecYM4IMhYtR8fv87C2Mfvv9yaE1H6bDU",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1ecYM4IMhYtR8fv87C2Mfvv9yaE1H6bDU",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Overwhelmed",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -247,8 +247,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1jYl8OTJHtacQhYqNoY70lpuBTTA6bMbf",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1jYl8OTJHtacQhYqNoY70lpuBTTA6bMbf",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Focus",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -258,8 +258,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1V4hra5MmT3vV8IL4mkbULwOVb-OhhT3Y",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1V4hra5MmT3vV8IL4mkbULwOVb-OhhT3Y",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Diversity",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -269,8 +269,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1FtYXYH1M9oVcPi0hQKEqc4Nzq2Ol78ez",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1FtYXYH1M9oVcPi0hQKEqc4Nzq2Ol78ez",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Everything for good",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -280,8 +280,8 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1vrd8tUrVingD-OcvSsF55NsNw-mEqZh0",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1vrd8tUrVingD-OcvSsF55NsNw-mEqZh0",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Sea People Illustration",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
@@ -291,52 +291,55 @@ export const workItems = [
     src: "https://drive.google.com/uc?export=view&id=1UR5VlZaBarLnDoCrBrwREddVUi6tVFFy",
     thumbnail:
       "https://drive.google.com/uc?export=view&id=1UR5VlZaBarLnDoCrBrwREddVUi6tVFFy",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Character Design",
+    description: "",
     category: "illustration",
     subcategory: "Digital 2D",
   },
   {
     id: "1",
     type: "video" as const,
-    src: "https://drive.google.com/file/d/1pSaCM0rnQnhofw5O9B0x8tGDgr8R12w_/preview",
+    src: "https://drive.google.com/file/d/11UhKmxgmlANXjH5rxgfcHm02iyqK73o6/preview",
     thumbnail:
-      "https://drive.google.com/file/d/1pSaCM0rnQnhofw5O9B0x8tGDgr8R12w_/preview",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+      "https://drive.google.com/file/d/11UhKmxgmlANXjH5rxgfcHm02iyqK73o6/preview",
+    title: "Forest Monstrosity",
+    description:
+      "A walk into the dark of the night, that leads to a forest trail; coming out of this wandering is a new day with new possible friendships.",
     category: "animation",
     subcategory: "Digital 2D",
   },
   {
     id: "2",
     type: "video" as const,
-    src: "https://drive.google.com/file/d/1pLqMo1QpddXDwDXiE1oIDpqg-laOJ-E0/preview",
+    src: "https://drive.google.com/file/d/1-aaXFIgLaNEzr5_rB0tyn8llm4CrSGX9/preview",
     thumbnail:
-      "https://drive.google.com/file/d/1pLqMo1QpddXDwDXiE1oIDpqg-laOJ-E0/preview",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+      "https://drive.google.com/file/d/1-aaXFIgLaNEzr5_rB0tyn8llm4CrSGX9/preview",
+    title: "My ‘SOMEONE’",
+    description:
+      "Years, experiences, and realizations later, she comes to understand the love of the most special person who never gave up on her.",
     category: "animation",
     subcategory: "Digital 2D",
   },
   {
     id: "3",
     type: "video" as const,
-    src: "https://drive.google.com/file/d/1pJ3OhmqWTnmmLbVdL33L_CIKREYegfAG/preview",
+    src: "https://drive.google.com/file/d/12AiiNVqM59tqWIsN5R_KmBcoIvzqW5Fw/preview",
     thumbnail:
-      "https://drive.google.com/file/d/1pJ3OhmqWTnmmLbVdL33L_CIKREYegfAG/preview",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+      "https://drive.google.com/file/d/12AiiNVqM59tqWIsN5R_KmBcoIvzqW5Fw/preview",
+    title: "LIAF MELTED",
+    description: "Heart-melted by the films.",
     category: "animation",
     subcategory: "Digital 2D",
   },
   {
     id: "4",
     type: "video" as const,
-    src: "https://drive.google.com/file/d/1pLw1XmsvQlF6DieUSMEp3kyYM_VZXn7h/preview",
+    src: "https://drive.google.com/file/d/1kJAgiaFmkpMOCkXHl0eh9CoO2tF7_BeA/preview",
     thumbnail:
-      "https://drive.google.com/file/d/1pLw1XmsvQlF6DieUSMEp3kyYM_VZXn7h/preview",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+      "https://drive.google.com/file/d/1kJAgiaFmkpMOCkXHl0eh9CoO2tF7_BeA/preview",
+    title: "Bloom of the Outcast",
+    description:
+      "In the comedic chills of 'Bloom of the Outcast’, follow the quirky tale of a socially estranged individual discovering a kindred spirit.",
     category: "animation",
     subcategory: "Digital 2D",
   },
@@ -346,8 +349,29 @@ export const workItems = [
     src: "https://drive.google.com/file/d/1seyQt9SpsAmrB5J-HAwwrxq0EG2qaQ-e/preview",
     thumbnail:
       "https://drive.google.com/file/d/1seyQt9SpsAmrB5J-HAwwrxq0EG2qaQ-e/preview",
-    title: "Character Animation",
-    description: "A dynamic character animation sequence",
+    title: "Digital 2D Animation Showreel",
+    description: (
+      <div>
+        <p>
+          Artist/Director Statement: <br /> As a versatile artist with extensive
+          experience in traditional techniques like pencil sketching and
+          painting, I am now venturing into the digital realm as an animator.
+          This transition allows me to explore various animation methods,
+          deepening my understanding of this dynamic field. In my personal
+          animation work, I gravitate toward pastel and bright colors, often
+          focusing on selfdevelopment and slice-of-life themes. My goal is to
+          resonate with a broad audience, especially children, by imparting
+          messages of positivity and personal growth. I believe in the power of
+          animation to inspire young minds, helping them thrive despite their
+          surroundings. While I am not confined to a single art style, I
+          actively explore the integration of modern techniques with traditional
+          methods, as I recognize the value of both evolving practices and
+          timeless artistry. In exploring different animation styles, I aim to
+          discover a distinctive style that I can incorporate into my upcoming
+          motion graphics designs and illustrations.
+        </p>
+      </div>
+    ),
     category: "animation",
     subcategory: "Digital 2D",
   },
