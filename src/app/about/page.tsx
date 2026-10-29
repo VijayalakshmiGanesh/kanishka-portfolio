@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function About() {
   const skills = [
@@ -55,7 +54,7 @@ export default function About() {
                 team! I’m highly adaptable and always ready to learn.
               </p>
             </div>
-            <div>
+            {/* <div>
               <h2 className="text-2xl md:text-3xl font-bold my-6">
                 <span className="bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
                   Biography
@@ -70,23 +69,7 @@ export default function About() {
                 create her distinctive style. Her work represents a thoughtful
                 approach to merging different artistic methods and mediums.
               </p>
-            </div>
-            <div className="flex gap-4 my-6">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-primary hover:bg-primary-dark text-white px-6 py-3 rounded-full font-medium transition-colors"
-              >
-                Download Resume
-              </motion.button>
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-primary hover:bg-primary/10 text-primary px-6 py-3 rounded-full font-medium transition-colors"
-              >
-                <Link href="/contact">Contact Me</Link>
-              </motion.div>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
